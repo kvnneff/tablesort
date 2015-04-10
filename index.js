@@ -120,7 +120,7 @@ TableSorter.prototype.sort = function(fn, order, h, i) {
   var el = this.el();
   var els = this.elements();
   this.order = order = order || this.order === 'asc'? 'desc' : 'asc';
-  sort[order](el, els, fn);
+  sort[order](el, fn);
   this.emit('sort', order, h, i, fn);
 };
 
